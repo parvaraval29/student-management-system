@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<constant name="struts.devMode" value="true"/>
+<package name="default" extends="struts-default">
+
+<action name="Login" class="p.Login" method="execute"> 
+<result name="ok">Admin.html</result>
+<result name="fail">Login.jsp</result>
+</action>
+
+<action name="TLogin" class="p.TLogin" method="execute"> 
+<result name="ok">Teacher.html</result>
+<result name="fail">TLogin.jsp</result>
+</action>
+
+<action name="AddStudent" class="p.AddStudent" method="execute"> 
+<result name="success">AddStudent.jsp</result>
+<result name="fail">AddStudent.jsp</result>
+</action>
+
+<action name="AddSubject" class="p.AddSubject" method="execute"> 
+<result name="success">AddSubject.jsp</result>
+<result name="fail">AddSubject.jsp</result>
+</action>
+
+<action name="AddMark" class="p.AddMark" method="execute"> 
+<result name="success">AddMark.jsp</result>
+<result name="fail">AddMark.jsp</result>
+</action>
+
+<action name="AddTeacher" class="p.AddTeacher" method="execute"> 
+<result name="success">AddTeacher.jsp</result>
+<result name="fail">AddTeacher.jsp</result>
+</action>
+
+
+</package>
+</struts>    
